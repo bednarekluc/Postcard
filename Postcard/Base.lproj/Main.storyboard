@@ -38,7 +38,7 @@
                                     <rect key="frame" x="16" y="320" width="324" height="30"/>
                                 </variation>
                             </textField>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFR-CR-bNF">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFR-CR-bNF" userLabel="Label Message">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -61,6 +61,15 @@
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Bde-ub-ctJ"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwU-Dx-Rj1" userLabel="Label Naam">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="215" width="210" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -70,6 +79,7 @@
                                 <exclude reference="nvK-Id-Lxb"/>
                                 <exclude reference="hFR-CR-bNF"/>
                                 <exclude reference="aQR-PL-zgu"/>
+                                <exclude reference="YwU-Dx-Rj1"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -79,6 +89,7 @@
                                 <include reference="nvK-Id-Lxb"/>
                                 <include reference="hFR-CR-bNF"/>
                                 <include reference="aQR-PL-zgu"/>
+                                <include reference="YwU-Dx-Rj1"/>
                             </mask>
                         </variation>
                     </view>
@@ -87,11 +98,12 @@
                         <outlet property="enterNameTextField" destination="u9D-5d-qVK" id="uYg-Q5-tln"/>
                         <outlet property="mailButton" destination="aQR-PL-zgu" id="LQo-Iy-PjO"/>
                         <outlet property="messageLabel" destination="hFR-CR-bNF" id="2sY-n7-I8z"/>
+                        <outlet property="nameLabel" destination="YwU-Dx-Rj1" id="U6S-Ev-qxN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2076" y="466"/>
+            <point key="canvasLocation" x="2068.5" y="466"/>
         </scene>
         <!--Barcelona-->
         <scene sceneID="T1H-MX-q9M">
